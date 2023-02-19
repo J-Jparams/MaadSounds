@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
  import App from './App';
  import Beats from './pages/Beats';
+ import Login from './pages/Login';
 import{
    createBrowserRouter, 
   RouterProvider,
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
     path: "/beats",
     element: <Beats />,
   },
+  {
+    path: "/login",
+    element: <Login />
+  }
 ]);
 
 
@@ -25,6 +30,7 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    
     <RouterProvider router={router} />
   </React.StrictMode>
 );

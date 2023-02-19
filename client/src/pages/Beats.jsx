@@ -1,12 +1,13 @@
 import React from "react";
 import { supabase } from "../lib/client";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 function Beats() {
+  const [products, setProducts] = useState([])
 
  async function fetchData() {
-  let { data: products } = await supabase.from('product').select('*')
-  console.log(products)
+  let { data: products } = await supabase.from('product').select('mp3')
+  setProducts(products)
  }
 
  useEffect(() => {
@@ -14,13 +15,12 @@ function Beats() {
 
  }, [])
 
-
+console.log(products)
   return (
     <div>
           <h1 className="text-3xl font-bold underline">
       Hello world! Beats Page
     </h1>
-
     </div>
   );
 }
