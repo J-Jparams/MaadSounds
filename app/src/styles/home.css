@@ -1,0 +1,87 @@
+.landing-page {
+    width: 100vw;
+}
+
+.donate-support {
+    background-color: #f7f7f7;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+}
+
+.donate-support>img {
+    width: 10%;
+}
+
+.MacbookAirM2-LP>img {
+    margin-right: 15%;
+    width: 100%;
+}
+
+.MacbookAirM2-LP>div {
+    margin-top: 12%;
+    margin-left: 15%;
+    text-align: center;
+    align-items: center;
+}
+
+.MacbookAirM2-LP>div>h1 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.MacbookAirM2-LP {
+    display: flex;
+    background-image: url(../assets/BeatsWallpaper.png);
+        background-size: contain;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 30px;
+    margin-inline: 10px;
+    font-weight: 400;
+}
+
+
+/* Responsive */
+
+@media only screen and (max-width: 951px) {
+    .MacbookAirM2-LP {
+        display: grid;
+        text-align: center;
+        background-size: contain;
+    }
+
+    .MacbookAirM2-LP>img {
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .MacbookAirM2-LP>div>h1 {
+        margin-left: -20%;
+    }
+
+    .MacbookAirM2-LP>div>.row-nospace>h2 {
+        margin-left: -1vw;
+    }
+
+    .MacbookAirM2-LP>div>.row-around {
+        margin-left: -20%;
+    }
+
+    .donate-support {
+        display: grid;
+        text-align: center;
+        align-self: center;
+    }
+
+    .donate-support>img {
+        width: 20%;
+        margin-left: 40%;
+    }
+}

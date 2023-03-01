@@ -1,0 +1,87 @@
+.My-Navbar {
+    background-color: #2a2a2a;
+    padding: 10px;
+    color: lightgray;
+    transition: 0.3s;
+    overflow-x: hidden;
+}
+
+
+.My-Navbar-Links {
+    display: flex;
+    justify-content: space-evenly;
+    transition: 0.3s;
+}
+
+.chkboxIcon {
+    display: none;
+    transition: 0.3s;
+}
+
+@media only screen and (max-width: 951px) {
+    .My-Navbar-Links>.My-Navbar-Links-A {
+        display: none;
+    }
+
+    .My-Navbar-Links>.ShoppingBagIcon {
+        display: none;
+    }
+
+    .chkboxIcon {
+        display: block;
+    }
+
+    .My-Navbar-Links {
+        margin-top: 5px;
+        justify-content: space-between;
+    }
+}
+
+.My-Navbar-Links-A>a {
+    color: lightgrey;
+    text-decoration: none;
+    margin-inline: 20px;
+    font-weight: 400;
+    font-size: 12px;
+    transition: 0.3s;
+}
+
+.My-Navbar-Links>a .MuiSvgIcon-root {
+    width: 20px;
+    height: 20px;
+}
+
+.My-Navbar-Links>a:hover {
+    color: white;
+}
+
+.My-Navbar-Links-A>a:hover {
+    color: white;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked~a {
+    margin-right: -100%;
+}
+
+input[type="checkbox"]:checked~.My-Navbar-Links-A {
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: -52%;
+}
+
+input[type="checkbox"]:checked~.My-Navbar-Links-A>a {
+    display: list-item;
+    padding: 10px;
+    font-size: 20px;
+    margin-inline: 10px;
+    margin-left: 30px;
+    width: 90vw;
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+    list-style: none;
+}
